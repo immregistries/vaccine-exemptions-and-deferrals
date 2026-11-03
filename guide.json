@@ -12,5 +12,10 @@
     "query-and-response": "Query and Response",
     "path-forward": "Path Forward",
     "working-decisions": "Decisions"
+  },
+  "comments": {
+    "mode": "interophub",
+    "hub": "https://informatics.immregistries.org/hub",
+    "document": "vaccine-exemptions-and-deferrals"
   }
 }
