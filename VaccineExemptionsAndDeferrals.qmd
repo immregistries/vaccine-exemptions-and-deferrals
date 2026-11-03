@@ -1,0 +1,18 @@
+---
+title: "Vaccine Exemptions and Deferrals"
+subtitle: "A Topic Reference for community discussion"
+date: last-modified
+date-format: "MMMM YYYY"
+---
+
+{{< include content/00-status-and-scope.md >}}
+
+{{< include content/01-concepts-and-use-cases.md >}}
+
+{{< include content/02-information-model.md >}}
+
+{{< include content/03-query-and-response.md >}}
+
+{{< include content/04-path-forward.md >}}
+
+{{< include content/90-working-decisions.md >}}

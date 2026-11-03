@@ -1,0 +1,93 @@
+# Repository Instructions
+
+## What this repository is
+
+- This is the Topic Reference for InteropHub topic 36,
+  [Vaccine Exemptions and Deferrals](https://informatics.immregistries.org/hub/es/topic/36): the current, versioned statement of the
+  topic's definitions, principles, diagrams, working decisions, and open
+  questions. See `process/guidance/TopicReference.md`.
+- The published Topic Reference is the web guide, `output/guide/index.html`,
+  built by `process/tools/build_guide.py` with the shared AIRA Web template and
+  published to https://immregistries.github.io/vaccine-exemptions-and-deferrals/latest/ by `.github/workflows/publish-guide.yml`.
+  Do not write a separate HTML page, stylesheet, or site generator.
+  `output/VaccineExemptionsAndDeferrals.html` is Quarto's review copy, not the published page.
+
+## Public repository
+
+- This repository is public. Everything committed here may be read, copied,
+  and indexed by anyone.
+- Do not commit private material: internal plans, funding or partner
+  proposals, contact information, email, meeting recordings, unpublished
+  partner data, credentials, or personal metadata in Office files.
+- Source material in private working folders is not copied here. Draw on it by
+  writing reviewed, public-safe prose in `content/`.
+
+## Authority
+
+- Markdown in `content/`, with `VaccineExemptionsAndDeferrals.qmd`, `_quarto.yml`, and cited
+  assets, is the canonical source for the core document.
+- `VaccineExemptionsAndDeferrals.qmd` defines section order. `CoreDocument.md` is generated;
+  never edit it directly.
+- Files in `output/` are generated artifacts, not source.
+- Comments made on the web guide, in GitHub issues, in meetings, or on other
+  copies are review inputs. Adjudicate accepted changes into `content/`.
+
+## Writing the source
+
+- Keep the source concise. State each fact, rule, code, and decision in one
+  place and link to it from elsewhere. Do not restate tables in prose, add
+  recaps, or repeat the open-questions table in a section.
+- Keep the document to about six top-level chapters, including the appendix.
+  Merge short or related chapters and use second-level headings within them.
+- These limits apply to `content/` only. Derived products may repeat and
+  expand as their audience needs.
+
+## Status and certainty
+
+- Until a maintainer releases a version as final, this is a working draft.
+  Never describe it, or any part of it, as a standard, approved, balloted,
+  adopted, or final unless a maintainer has said so.
+- Working decisions are current positions for discussion. Record each in
+  `content/90-working-decisions.md` with its basis.
+- Do not silently introduce a new claim, decision, commitment, number, owner,
+  date, or change in certainty. Mark it with `<!-- CONFIRM: ... -->` beside the
+  affected text for human resolution.
+- When sources conflict, record an open question rather than choosing silently.
+  Later sources are not automatically more authoritative.
+
+## Project boundaries
+
+- This topic owns the definitions, use cases, information model, and exchange
+  patterns for vaccine exemptions and deferrals in IIS interfaces.
+- This topic defines how exemption information is communicated. Exemption
+  policy, intake, who may send or receive information, how it is used or
+  disclosed, and clinical decision support are out of scope; state that
+  briefly and do not add warnings about misuse.
+- This is a technical template, not a report on projects. Refer to
+  implementations only as "at least one IIS," and do not name jurisdictions,
+  their systems, or people.
+- Keep a jurisdiction's local choices, such as locally assigned profile
+  identifiers, labeled as implementation experience, not national
+  requirements.
+- Do not fit deferrals into the exemption structure until the community defines
+  them.
+
+- Do not create clinical policy or silently settle open design questions.
+
+## Shared templates
+
+- `process/` is a Git submodule of
+  `immregistries/content-publishing-templates`, pinned to a release tag. Do not
+  edit or copy files under it. Adopt changes by moving the pointer, rebuilding,
+  reviewing the output, and committing.
+
+## Validation
+
+- After editing `content/` or `VaccineExemptionsAndDeferrals.qmd`, run
+  `python process/tools/build_core_markdown.py --assembly VaccineExemptionsAndDeferrals.qmd`,
+  then `validate.ps1`.
+- Run `build.ps1` and open `output/guide/index.html` before any release.
+- Review the `CONFIRM` list printed by the content check.
+- Successful generation is a mechanical check, not editorial approval.
+- Do not commit, push, tag, publish, or update InteropHub without explicit
+  instruction.

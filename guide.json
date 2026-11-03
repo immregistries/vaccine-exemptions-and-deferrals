@@ -1,0 +1,16 @@
+{
+  "id": "vaccine-exemptions-and-deferrals",
+  "documentType": "Topic Reference",
+  "status": "Draft",
+  "interophubTopic": 36,
+  "repository": "https://github.com/immregistries/vaccine-exemptions-and-deferrals",
+  "license": "Content licensed CC BY 4.0",
+  "navLabels": {
+    "status-and-scope": "Scope",
+    "concepts-and-use-cases": "Concepts",
+    "information-model": "Information Model",
+    "query-and-response": "Query and Response",
+    "path-forward": "Path Forward",
+    "working-decisions": "Decisions"
+  }
+}
