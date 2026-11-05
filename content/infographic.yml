@@ -1,0 +1,34 @@
+# Primary infographic: this topic at a glance.
+#
+# Canonical source, reviewed like the Markdown in content/. Each label condenses
+# a section of the core document and names it with ref, a heading ID or anchor
+# in content/. Add no claim, number, commitment, or change in certainty that the
+# referenced section does not state. Replace each CONFIRM text as the sections
+# are written. build.ps1 draws the image and places it in the guide and the Word
+# document. Each idea may name an icon from process/templates/infographic/icons/.
+# See "Primary infographic" in process/guidance/TopicReference.md.
+layout: topic-at-a-glance
+arrangement: set
+title: "Vaccine Exemptions and Deferrals"
+purpose:
+  text: "CONFIRM: State in one sentence what this topic is for."
+  ref: status-and-scope
+ideas:
+  - id: idea-1
+    label: "Concepts and Use Cases"
+    text: "CONFIRM: Condense the section it names in a sentence."
+    ref: concepts-and-use-cases
+  - id: idea-2
+    label: "Information Model"
+    text: "CONFIRM: Condense the section it names in a sentence."
+    ref: information-model
+  - id: idea-3
+    label: "Query and Response"
+    text: "CONFIRM: Condense the section it names in a sentence."
+    ref: query-and-response
+  - id: idea-4
+    label: "Path Forward"
+    text: "CONFIRM: Condense the section it names in a sentence."
+    ref: path-forward
+alt: "CONFIRM: Describe the figure in one or two sentences for readers who cannot see it."
+topic_link: true

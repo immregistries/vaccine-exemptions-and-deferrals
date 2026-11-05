@@ -11,6 +11,7 @@ assembled in the order listed in [VaccineExemptionsAndDeferrals.qmd](../VaccineE
 | [03-query-and-response.md](03-query-and-response.md) | The implemented QBP/RSP pattern: explicit request, request profiles, and response payload |
 | [04-path-forward.md](04-path-forward.md) | Unsolicited updates (VXU), candidate artifacts, validation, and steps toward formal standards |
 | [90-working-decisions.md](90-working-decisions.md) | Appendix: working decisions and open questions |
+| [infographic.yml](infographic.yml) | The primary infographic: the topic at a glance, each part referring to the section it summarizes |
 
 Add topic sections between `01` and `90`, numbered in reading order, and list
 each one here and in the assembly file. Keep the document to about six
